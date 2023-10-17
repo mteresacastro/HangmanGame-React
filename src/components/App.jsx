@@ -122,7 +122,7 @@ export default App
 
 
   import { useEffect, useState } from "react";
-
+  import Header from "./Header";
   // api
   import getWordFromApi from "../services/api";
   // styles
@@ -207,9 +207,7 @@ export default App
   
     return (
       <div className="page">
-        <header>
-          <h1 className="header__title">Juego del ahorcado</h1>
-        </header>
+        <Header title="Juego del ahorcado"/>
         <main className="main">
           <section>
             <div className="solution">
