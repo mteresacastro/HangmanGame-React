@@ -1,0 +1,34 @@
+@import 'core/reset';
+@import 'components/dummy';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/header';
+@import 'components/instructions';
+@import 'components/letters';
+@import 'components/loading';
+
+.main {
+    display: flex;
+    justify-content: center;
+  }
+
+// COMMON STYLES
+
+.title {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1;
+    text-align: center;
+  }
+  
+  // PAGE
+  
+  .page {
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../images/blackboard.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+  
