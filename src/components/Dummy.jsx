@@ -2,7 +2,7 @@ import "../styles/components/Dummy.scss";
 
 const Dummy = (props) =>{
 
-return (<section className={`dummy error-${props.numberOfErrorsProp}`}>
+return (<section className={`dummy error-${props.getNumberOfErrorsProp}`}>
     <span className="error-13 eye"></span>
     <span className="error-12 eye"></span>
     <span className="error-11 line"></span>

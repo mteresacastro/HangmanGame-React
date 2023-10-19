@@ -3,9 +3,9 @@
 import '../styles/components/Letters.scss';
 
 const SolutionLetters = ({classCss, title, render}) => {
-<div className={classCss}>
+ return (<div className={classCss}>
     <h2 className="title">{title}</h2>
     <ul className="letters">{render}</ul>
-</div>
+</div>)
 };
 export default SolutionLetters;
