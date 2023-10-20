@@ -3,7 +3,10 @@
   import Footer from "./Footer";
   import Header from "./Header";
   import Dummy from "./Dummy";
+  import Instructions from './Instructions';
   import SolutionLetters from './SolutionLetters';
+  import Options from './Options';
+
   // api
   import getWordFromApi from "../services/api";
   // styles
@@ -92,6 +95,10 @@
       <div className="page">
         <Header title="Juego del ahorcado"/>
         <main className="main">
+         
+          <Dummy getNumberOfErrorsProp={getNumberOfErrors()}/>
+          <Routes>
+          <Route path="/" element={ 
           <section>
             <SolutionLetters 
             classCss="solution"
@@ -118,14 +125,13 @@
                 onChange={handleChange}
               />
             </form>
-          </section>
-          <Dummy getNumberOfErrorsProp={getNumberOfErrors()}/>
+          </section>}/>
+            <Route path='/Instructions' element={<Instructions/>}/>
+            <Route path='/Options' element={<Options/>}/>
+          </Routes>
         </main>
-      <Footer />
-      <Routes>
-        <Route path="/" element={<App/>}/>
-        
-      </Routes>
+      <Footer/>
+  
       </div>
     );
   }

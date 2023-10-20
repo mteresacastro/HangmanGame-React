@@ -7,13 +7,13 @@ const Footer = () => {
             <nav>
                 <ul>
                     <li className="footer__menu-item">
-                    <NavLink to="/" className={({ isActive, isPending }) => isPending ? "footer__menu-link pending" : isActive ? "footer__menu-link active" : ""}>A jugar</NavLink>
+                    <NavLink to="/" className="footer__menu-link">A jugar</NavLink>
                     </li>
                     <li className="footer__menu-item">
-                    <a className="footer__menu-link" href="#/instructions">¿Cómo se juega?</a>
+                    <NavLink to="/Instructions" className= "footer__menu-link">¿Cómo se juega?</NavLink>
                     </li>
                     <li className="footer__menu-item">
-                    <a className="footer__menu-link" href="#/options">Más opciones</a>
+                    <NavLink to="/Options" className= "footer__menu-link">Más Opciones</NavLink>
                     </li>
                 </ul>
             </nav>
@@ -23,3 +23,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// <NavLink to="/Instructions" className={({ isActive, isPending }) => isPending ? "footer__menu-link pending" : isActive ? "footer__menu-link active" : ""}>¿Cómo se juega?</NavLink>
+
