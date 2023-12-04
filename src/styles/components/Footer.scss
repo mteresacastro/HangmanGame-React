@@ -19,4 +19,8 @@
       text-decoration: none;
     }
   }
+  &__credits{
+    display:flex;
+    flex-direction: column;
+  }
 }

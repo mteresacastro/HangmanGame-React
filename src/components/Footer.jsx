@@ -7,19 +7,22 @@ const Footer = () => {
             <nav>
                 <ul>
                     <li className="footer__menu-item">
-                    <NavLink to="/" className="footer__menu-link">A jugar</NavLink>
+                        <NavLink to="/" className="footer__menu-link">A jugar</NavLink>
                     </li>
                     <li className="footer__menu-item">
-                    <NavLink to="/Instructions" className= "footer__menu-link">¿Cómo se juega?</NavLink>
+                        <NavLink to="/Instructions" className="footer__menu-link">¿Cómo se juega?</NavLink>
                     </li>
                     <li className="footer__menu-item">
-                    <NavLink to="/Options" className= "footer__menu-link">Más Opciones</NavLink>
+                        <NavLink to="/Options" className="footer__menu-link">Más Opciones</NavLink>
                     </li>
                 </ul>
             </nav>
-            <small className="footer__copy">© Adalab</small>
-      </footer>
-   ) 
+            <div className="footer__credits">
+                <small className="footer__copy">© Adalab</small>
+                <small className="footer__copy">@mteresacastro</small>
+            </div>
+        </footer>
+    )
 };
 
 export default Footer;
