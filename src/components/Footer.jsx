@@ -19,7 +19,7 @@ const Footer = () => {
             </nav>
             <div className="footer__credits">
                 <small className="footer__copy">© Adalab</small>
-                <small className="footer__copy">@mteresacastro</small>
+                <small className="footer__copy">@mteresacastro & @mireiamc</small>
             </div>
         </footer>
     )

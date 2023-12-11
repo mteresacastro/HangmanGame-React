@@ -6,6 +6,8 @@ const Instructions = () => {
     <section className="instructions">
       <p>
         Existen dos modos de juego, individual, donde la palabra viene de una API, o multijugador, donde un jugador piensa en una palabra, y la escribe en la seccion de más opciones.
+      </p>
+      <p>
         La metodología de juego es la siguiente, en la seccion principal apareceran los huecos de las letras de la palabra elegida o la generada por la API. El contrincante tendrá que ir escribiendo letras sin números ni signos de puntuación, intentando adivinar la palabra de la solución.
       </p>
       <p>
